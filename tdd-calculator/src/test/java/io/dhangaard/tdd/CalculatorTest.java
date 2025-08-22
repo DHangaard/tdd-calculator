@@ -13,6 +13,7 @@ class CalculatorTest {
     void setUp() {
     }
 
+
     // Create instance of calculator
     Calculator calc = new Calculator();
 
@@ -32,16 +33,18 @@ class CalculatorTest {
     @Test
     @DisplayName("Integer subtraction, a - b")
     public void subTest(){
-        // Arrange
         int expected = 7;
-
-        // Act
         int actual = calc.sub(10, 3);
-
-        // Assert
         assertEquals(expected, actual);
     }
 
+    @Test
+    @DisplayName("Integer multiplication, a * b")
+    public void mulTest(){
+        int expected = 10;
+        int actual = calc.mul(5, 2);
+        assertEquals(expected, actual);
+    }
 
 
     @AfterEach
