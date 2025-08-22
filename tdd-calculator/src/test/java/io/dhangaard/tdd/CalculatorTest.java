@@ -29,6 +29,19 @@ class CalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    @DisplayName("Integer subtraction, a - b")
+    public void subTest(){
+        // Arrange
+        int expected = 7;
+
+        // Act
+        int actual = calc.sub(10, 3);
+
+        // Assert
+        assertEquals(expected, actual);
+    }
+
 
 
     @AfterEach
