@@ -46,6 +46,14 @@ class CalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    @DisplayName("Integer division, a / b")
+    public void divTest(){
+        int expected = 2;
+        int actual = calc.div(10, 5);
+        assertEquals(expected, actual);
+    }
+
 
     @AfterEach
     void tearDown() {
