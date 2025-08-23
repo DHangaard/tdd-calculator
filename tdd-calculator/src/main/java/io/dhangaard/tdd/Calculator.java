@@ -1,8 +1,5 @@
 package io.dhangaard.tdd;
 
-import java.util.ArrayList;
-import java.util.Scanner;
-
 public class Calculator {
 
     // Addition
