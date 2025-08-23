@@ -8,11 +8,10 @@ public class Calculator {
     }
 
     // Overload addition method to take String input
-    public int add(String input){
+    public int add(String numbers){
         int result = 0;
-        String[] numbers = input.split(",");
 
-        for (String number : numbers){
+        for (String number : numbers.split(",")){
             int n = Integer.parseInt(number);
             result += n;
         }
