@@ -12,8 +12,7 @@ public class Calculator {
         int result = 0;
 
         for (String number : numbers.split(",")){
-            int n = Integer.parseInt(number);
-            result += n;
+            result += Integer.parseInt(number);
         }
 
         return result;
