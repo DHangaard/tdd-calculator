@@ -31,6 +31,14 @@ class CalculatorTest {
     }
 
     @Test
+    @DisplayName("Integer addition, String input \"1,2,3\"")
+    public void addStringInputTest(){
+        int expected = 6;
+        int actual = calc.add("1,2,3");
+        assertEquals(expected, actual);
+    }
+
+    @Test
     @DisplayName("Integer subtraction, a - b")
     public void subTest(){
         int expected = 7;
