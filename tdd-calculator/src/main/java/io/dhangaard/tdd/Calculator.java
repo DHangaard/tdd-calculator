@@ -11,13 +11,24 @@ public class Calculator {
     }
 
     // Overload addition method to take String input
-    public int add (String input){
+    public int add(String input){
         int result = 0;
         String[] numbers = input.split(",");
 
         for (String number : numbers){
             int n = Integer.parseInt(number);
             result += n;
+        }
+
+        return result;
+    }
+
+    // Overload addition method to take int array
+    public int add(int[] numbers){
+        int result = 0;
+
+        for (int number : numbers){
+            result += number;
         }
 
         return result;

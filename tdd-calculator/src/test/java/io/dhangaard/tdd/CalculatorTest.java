@@ -31,10 +31,18 @@ class CalculatorTest {
     }
 
     @Test
-    @DisplayName("Integer addition, String input \"1,2,3\"")
+    @DisplayName("Integer addition, String input, \"1,2,3\"")
     public void addStringInputTest(){
         int expected = 6;
         int actual = calc.add("1,2,3");
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    @DisplayName("Integer addition, array input, int[]{1,2,3}")
+    public void addArrayInputTest(){
+        int expected = 6;
+        int actual = calc.add(new int[]{1,2,3});
         assertEquals(expected, actual);
     }
 
